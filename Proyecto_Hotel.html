@@ -8,14 +8,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-      
-     /* esta es la del menu */ 
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
-      background-color: #f2f2f2
     }
-            
     
     /* Add a gray background color and some padding to the footer */
     footer {
@@ -35,11 +32,16 @@
       display: none; 
     }
   }
+      
+    .rojoxd:hover{
+        color: red;
+        background-color: red;
+      }
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" style="border-bottom:0px; background-color: #f2f2f2; border-color: #f2f2f2;">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -47,24 +49,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-fluid" href="#"><image><img src="logos/4_Grayscale_logo_on_transparent_376x63.png" alt="1"></image></a>
+      <a class="navbar-fluid" href="#"><img src="Logos/4_Grayscale_logo_on_transparent_376x63.png"></a>
     </div>
     <div class="navbar-header" style="float: right;">
-      <button type="button" class="navbar2-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        
-        </button>
-        <a class="navbar-brand" href="#"><ul class="nav navbar-nav navbar2-right" style="margin-left: 0;">
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <a class="navbar-brand" href="#"><ul class="nav navbar-nav navbar-right" style="margin-left: 0;">
+            <li><a href="#"><span class="glyphicon glyphicon-log-in "></span> Login</a></li>
         </ul></a>
       </div>
 </nav>
-<nav class="navbar navbar-inverse">
-    <div class="collapse navbar-collapse" id="myNavbar">
+<nav class="navbar navbar-inverse" style="border-top: 0px;">
+    <div class="collapse navbar-collapse" id="myNavbar" style="padding:0px; background-color: #23203b;">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="#" style="background-color: #403c5f;">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
@@ -138,4 +134,3 @@
 
 </body>
 </html>
-
